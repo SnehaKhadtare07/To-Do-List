@@ -1,0 +1,12 @@
+/* index.css or App.css — GLOBAL STYLES */
+:root {
+  --accent-color: #8b0000; /* default */
+}
+
+button {
+  background-color: var(--accent-color);
+}
+
+a {
+  color: var(--accent-color);
+}

@@ -1,0 +1,281 @@
+.sidebar {
+  width: calc(260px - 5mm);
+  background: white;
+  /* Removed color and blur for white background */
+  color: black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Sidebar background for default */
+.sidebar.default {
+  background-color: white;
+  color: black;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* New theme backgrounds */
+.sidebar.blue {
+  background-color: #2A4D75;
+  color: white;
+}
+
+.sidebar.cat1 {
+  background-color: #9882ac;
+  color: white;
+}
+
+.sidebar.cat2 {
+  background-color: #FFD3D6;
+  color: black;
+}
+
+.sidebar.cat3 {
+  background-color: #EDE8D0;
+  color: black;
+}
+
+.sidebar.cat4 {
+  background-color: #F0E6FA;
+  color: black;
+}
+
+.sidebar.cat5 {
+  background-color: #FFC2D1;
+  color: black;
+}
+
+.sidebar.cat6 {
+  background-color: #030918;
+  color: white;
+}
+
+.sidebar.Doodle1 {
+  background-color: #59607E;
+  color: white;
+}
+
+.sidebar.Doodle2 {
+  background-color: black;
+  color: white;
+}
+
+.sidebar.Dreamland {
+  background-color: #FCE4EC;
+  color: black;
+}
+
+.sidebar.Forest {
+  background-color: #051912;
+  color: white;
+}
+
+.sidebar.GoldenHour {
+  background-color: #C49102;
+  color: white;
+}
+
+.sidebar.GoldenPath {
+  background-color: #DAA520;
+  color: black;
+}
+
+.sidebar.green {
+  background-color: #ADD0B3;
+  color: black;
+}
+
+.sidebar.minecraft1 {
+  background-color: #367588;
+  color: white;
+}
+
+.sidebar.minecraft2 {
+  background-color: #DCFFB6;
+  color: black;
+}
+
+.sidebar.minecraft3 {
+  background-color: #AB784E;
+  color: white;
+}
+
+.sidebar.Mountain {
+  background-color: #11413c;
+  color: white;
+}
+
+.sidebar.ocean {
+  background-color: #04A1BF;
+  color: white;
+}
+
+.sidebar.pink {
+  background-color: #EDAEC0;
+  color: black;
+}
+
+.sidebar.pinkcity {
+  background-color: F8BBD0;
+  color: black;
+}
+
+.sidebar.RainDays {
+  background-color: #526474;
+  color: white;
+}
+
+.sidebar.ShadeOfBrown1 {
+  background-color: #9C866B;
+  color: white;
+}
+
+.sidebar.ShadeOfBrown2 {
+  background-color: #756551;
+  color: white;
+}
+
+.sidebar.sky {
+  background-color: #0074D9;
+  color: black;
+}
+
+.sidebar.sqGrids {
+  background-color: rgba(249, 255, 221, 0.7)9;
+  color: white;
+
+  background-color: #504F72;
+  color: white;
+}
+
+.sidebar.StudyVibes2 {
+  background-color: #FFEE8C;
+  color: black;
+}
+
+.sidebar.StudyVibes3 {
+  background-color: #71797E;
+  color: white;
+}
+
+.sidebar.SunsetSeashore {
+  background-color: #EFA59A;
+  color: black;
+}
+
+.sidebar.VoiletFrame {
+  background-color: #272757;
+  color: white;
+}
+
+.sidebar h2 {
+  margin: 0 auto 1rem auto;
+  font-weight: bold;
+  color : black;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  display: block;
+  width: fit-content;
+}
+
+.add-list {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-list input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.add-list button {
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-list button:hover {
+  background: #0056b3;
+}
+
+/* List container is scrollable */
+.list-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 4px;
+  padding-bottom: 2mm;
+  max-height: 70vh;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 8px;
+  margin-right: 4mm;
+}
+
+.list-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Each tab */
+.list-tab {
+  display: flex;
+  align-items: center;
+  background: #e0e0e0;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.list-tab.active {
+  background: #007bff;
+}
+
+.list-tab button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.list-tab.active button {
+  color: #fff;
+}
+
+.delete-btn {
+  background: #ff5c5c !important;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+}
