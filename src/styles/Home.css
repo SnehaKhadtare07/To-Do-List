@@ -10,7 +10,7 @@ body, html {
 
 .home-layout {
   display: flex;
-  height: 100vh;
+  height: 100vh; /* Adjusted to fit within viewport */
   /* Removed overflow hidden to allow sidebar scrolling */
 }
 

@@ -15,14 +15,28 @@ const Home = () => {
         background: "#2a2a72",
         color: "white",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        marginTop: "-1cm",   
+        
       }}
     >
       {/* top brand */}
       <header style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <h1 style={{ fontSize: "2.5rem", fontWeight: "bold", fontFamily: "'Brush Script MT', cursive" }}>
+        <h1
+          style={{
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            fontFamily: "'Brush Script MT', cursive",
+          }}
+        >
           ✅ TASKFLOW
         </h1>
-        <p style={{ fontSize: "1.2rem", fontWeight: "bold", fontFamily: "'Brush Script MT', cursive" }}>
+        <p
+          style={{
+            fontSize: "1.2rem",
+            fontWeight: "bold",
+            fontFamily: "'Brush Script MT', cursive",
+          }}
+        >
           Make your day a little more organized and joyfully simple
         </p>
       </header>
@@ -36,6 +50,7 @@ const Home = () => {
           width: "100%",
           maxWidth: "900px",
           marginBottom: "2rem",
+          flexWrap: "wrap", // ✅ fixes small screen overflow
         }}
       >
         <div
@@ -45,6 +60,7 @@ const Home = () => {
             padding: "1rem",
             flex: "1",
             boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            minWidth: "250px",
           }}
         >
           <h2 style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>✨ Uniqueness</h2>
@@ -52,6 +68,7 @@ const Home = () => {
           <p>🎨 Personalize each list with colors, icons, and names that reflect your style.</p>
           <p>💡 Every list feels unique, because it’s made just for you.</p>
         </div>
+
         <div
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -59,6 +76,7 @@ const Home = () => {
             padding: "1rem",
             flex: "1",
             boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            minWidth: "250px",
           }}
         >
           <h2 style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>🎯 Priorities</h2>
@@ -66,6 +84,7 @@ const Home = () => {
           <p>🎯 Stay sharp by focusing on what truly matters first.</p>
           <p>⏳ No more stress—see clearly what needs attention and what can wait.</p>
         </div>
+
         <div
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -73,6 +92,7 @@ const Home = () => {
             padding: "1rem",
             flex: "1",
             boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            minWidth: "250px",
           }}
         >
           <h2 style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>🎨 Why</h2>
