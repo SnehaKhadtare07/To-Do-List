@@ -92,4 +92,4 @@ npm run preview → 👀 Preview your masterpiece
 Open-source & free under MIT License 👩‍⚖️
 Steal it, remix it, break it, fix it — just don’t forget me 🥲
 
-💖 Built with ❤️, ☕ coffee, and a dash of procrastination by SNEHA KHADTARE 🙌😂
+💖 Built with ❤️LOVE , ☕ coffee, and a dash of procrastination by SNEHA KHADTARE 🙌😂
