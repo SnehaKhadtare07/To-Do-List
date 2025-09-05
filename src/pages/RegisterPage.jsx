@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile, signOut } from "firebase/auth";
 import { auth, db } from "../services/firebase";
 import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
@@ -18,14 +18,16 @@ const RegisterPage = () => {
       const cred = await createUserWithEmailAndPassword(auth, email, pass);
       if (name) await updateProfile(cred.user, { displayName: name });
 
-      // create user profile doc (optional)
       await setDoc(doc(db, "users", cred.user.uid), {
         displayName: name || "",
         email,
         createdAt: serverTimestamp(),
       });
 
-      nav("/app", { replace: true });
+      // Sign out after registration
+      await signOut(auth);
+      alert("Account created successfully! Please log in."); // optional message
+      nav("/login", { replace: true });
     } catch (e) {
       setErr(e.message);
     }

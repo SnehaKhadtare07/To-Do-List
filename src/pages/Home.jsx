@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "90vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
